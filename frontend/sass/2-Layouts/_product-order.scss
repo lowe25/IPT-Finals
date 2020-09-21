@@ -1,0 +1,67 @@
+.product-container {
+  height: 22rem;
+  width: 100%;
+  padding-top: 1%;
+}
+.product-img-format{
+  height: 250px;
+  width:260px;
+  padding:10px;
+  text-align: center;
+  @extend .img-format;
+}
+
+#ordered-complete{
+  background-color: red;
+  color: white;
+}
+.product-class{
+  display: grid;
+  justify-content: center;
+  }
+
+.product-order{
+ display: grid;
+ justify-content: center;
+ input, p {
+   margin-left: 10px;
+ }
+}
+.beverage-item {
+  @extend .box-cart;
+  @extend .img-format;
+}
+
+.dessert-item {
+  @extend .box-cart;
+  @extend .img-format;
+}
+
+.shop-item-details {
+  position: relative;
+  top: 70%;
+}
+
+.shop-item{
+  @extend .box-cart;
+  @extend .img-format;
+  }
+
+  .shop-items{
+    padding-top: 30px;
+    display: grid;
+    justify-content: center;
+  }
+
+//Cart
+
+.cart-container{
+  padding-top: 2%;
+  text-align: center;
+  
+  }
+  .cart-items{
+    margin: 20px;
+  }
+//MediaQuerys
+

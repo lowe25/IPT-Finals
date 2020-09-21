@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://use.fontawesome.com/1d05123b50.js"></script>
+    <title>Welcome to Our Food Ordering Website</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <p>Hotdog Ni Robert</p>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="">Menu</a>
+            <ul class="hover-menu">
+              <li><a href="">Burgers</a></li>
+              <li><a href="">Pizza</a></li>
+              <li><a href="">Appetizers</a></li>
+              <li><a href="">Desserts</a></li>
+              <li><a href="">Beverages</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Transaction History</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="burger-cheese-container">
+      <div class="shop-items">
+        <div class="burger-cheese-item"></div>
+        <p id="ordered-complete"></p>
+        <span class="shop-item-title">Cheese Burger</span>
+        <span class="shop-item-price">65.00</span>
+        <button class="btn-cart btn-primary shop-item-button" type="button">
+          Add To Cart
+        </button>
+      </div>
+    </section>
+    <section class="cart-container">
+      <h2 class="section-header">Cart</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">Product</span>
+        <span class="cart-price cart-header cart-column">Price</span>
+        <span class="cart-quantity cart-header cart-column">Quantity</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">0</span>
+      </div>
+      <div class="v">
+        <button class="btn-order btn-primary btn-purchase" type="button" onclick="addTransaction()">
+          Order
+        </button>
+    </section>
+    <footer>
+      <div class="footer-info">
+        <div class="menu">
+          <h3>Menu</h3>
+          <ul>
+            <li>Burger</li>
+            <li>Pizza</li>
+            <li>Appettizers</li>
+            <li>Beverages</li>
+          </ul>
+        </div>
+
+        <div class="contacts">
+          <h3>Contact Us</h3>
+          <p>Tel#</p>
+          <p>123-456-7890</p>
+
+          <p>Email</p>
+          <p>info@mysite.com</p>
+        </div>
+
+        <div class="about">
+          <h3>About Us</h3>
+          <p>Address</p>
+          <p>500 Terry Francois St.</p>
+          <p>San Francisco, CA 94158</p>
+        </div>
+
+        <div class="socials">
+          <h3>Socials</h3>
+          <ul>
+            <li>
+              <i
+                class="fa fa-facebook-square"
+                aria-hidden="true"
+                padding-left="10px;"
+              >
+              </i
+              >Facebook
+            </li>
+            <li>
+              <i class="fa fa-twitter-square" aria-hidden="true"> </i>Twitter
+            </li>
+            <li>
+              <i class="fa fa-instagram" aria-hidden="true"> </i>Instagram
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/cart.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/api_client.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

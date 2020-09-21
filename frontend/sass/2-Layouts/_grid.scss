@@ -1,0 +1,36 @@
+.grid-desktop{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.grid-desktop-cart{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    grid-gap: 10px;
+    padding-left: 100px;
+}
+.grid-center{
+    display: grid;
+    justify-content: center;
+}
+
+@mixin grid-mobile {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+@mixin grid-tablet {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    grid-gap: 10px;
+}

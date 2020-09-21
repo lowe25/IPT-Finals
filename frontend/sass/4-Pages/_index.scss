@@ -1,0 +1,48 @@
+.index-container {
+  height: 43rem;
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 5px;
+}
+.products {
+  padding-top: 20px;
+  @extend .grid-desktop;
+}
+
+/*FOOD MENU*/
+.burger,
+.pizza,
+.chickens {
+  @extend .box-menus;
+  @extend .img-bg;
+}
+
+.pizza {
+  background-image: url(../images/pizza.jpg);
+}
+
+.burger {
+  background-image: url(../images/burger.jpg);
+}
+.chickens {
+  background-image: url(../images/pizza.jpg);
+}
+
+//MediaQuerys
+//Mobile
+@include respond($sm-screen) {
+  .index-container {
+    padding-top: 20px;
+    height: 40rem;
+  }
+  .products {
+    @include grid-mobile;
+  }
+  .burger,
+  .pizza,
+  .chickens {
+@include boxes-size($sm-screen)
+  }
+}
+
+//Tablet

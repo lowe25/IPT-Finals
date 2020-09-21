@@ -1,0 +1,78 @@
+/*
+0-480 = Small Phones = MAX
+481-768 = Tablets/Large Phones = MIN 
+769-1279 = Laptops/Large Tablets = MIN 
+769 - 1024
+1024- 1280
+1280 = Desktop = MIN
+
+EM = px / 16 
+*/
+
+//480px
+$sm-screen: 30em;
+
+//481px
+$md-screen: 30.06em;
+
+//769px
+$lg-screen: 48.06em;
+
+//480 - 768
+//767 max
+$tbl-screen:64em;
+
+//1280px
+$xl-screen: 71.25em;
+
+@mixin respond($breakpoint) {
+  //Mobile
+  @if $breakpoint==$sm-screen {
+    @media only screen and (max-width: $sm-screen) {
+      @content;
+    }
+  }
+  //Tablet
+  @else if $breakpoint==$md-screen {
+    @media only screen and (min-width: $md-screen) {
+      @content;
+    }
+  } @else if $breakpoint==$lg-screen {
+    @media only screen and(min-width: $lg-screen) {
+      @content;
+    }
+  } @else if $breakpoint==$xl-screen {
+    @media only screen and (max-width: $xl-screen) {
+      @content;
+    }
+  }
+}
+
+//Boxes Size
+@mixin boxes-size($breakpoint) {
+  @if$breakpoint==$sm-screen {
+    @content;
+    height: 170px;
+    width: 300px;
+    border: 2px solid black;
+    color: $text-color;
+    padding: 1em;
+    font-size: 20px;
+  } @else if $breakpoint == $md-screen {
+    @content;
+    height: 170px;
+    width: 350px;
+    border: 2px solid black;
+    color: $text-color;
+    padding: 1em;
+    font-size: 20px;
+  }@else if $breakpoint == $lg-screen{
+    height: 170px;
+    width: 300px;
+    border: 2px solid black;
+    color: $text-color;
+    padding: 1em;
+    font-size: 20px;
+  }
+}
+//Boxes

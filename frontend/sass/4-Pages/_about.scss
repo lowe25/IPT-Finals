@@ -1,0 +1,35 @@
+.about-container{
+    height: 60rem;
+    width: 100%;
+}
+.about{
+    margin:20px;
+    padding: 10px;
+    font-size: 19px;
+}
+.landing{
+    border-bottom: 2px solid black;
+img{
+    height: 500px;
+    width: 100%;
+}
+}
+.how{
+    padding-left: 50px;
+}
+.works{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.procedure{
+    display: block;
+    //Icon size 
+    font-size: 90px;
+    p{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,79 @@
+a{
+  text-decoration: none;
+}
+/*Button*/
+.btn-global{
+    height: 50px;
+    width: 00px;
+    font-size: 18px;
+    background-color: $bg-color;
+    color: #f4f4f4;
+    border: none;
+  }
+
+  //For Cart
+
+  .btn-remove{
+    height: 20px;
+    width: 100px;
+    background-color: $bg-color;
+    color: white;
+    border: none;
+  }
+  .btn-order{
+    height: 40px;
+    width: 260px;
+    background-color: $bg-color;
+    color: white;
+    border: none;
+  }
+
+  .btn-cart{
+    height: 40px;
+    width: 260px;
+    background-color: $bg-color;
+    color: white;
+    border: none;
+  }
+
+  //For Menus
+  .btn-menu {
+    height: 30px;
+    width: 30%;
+    border: none;
+    color: $text-color;
+    background-color: $bg-color;
+  }
+  .btn:hover {
+    color: $text-color;
+    background-color: $bg-color-hover;
+    transition: 2ms;
+  }
+  #infos{
+    width: 10px;
+  }
+ 
+
+  //Order Button Menus
+.btn-order{
+  display: block;
+  height: 30px;
+  width: 120px;
+  background-color: $bg-color;
+  color:$text-color;
+  border: none;
+  margin: 10px;
+}
+.order {
+  position: relative;
+  top: 50%;
+  left: 60%;
+  .product-name,
+  .product-price {
+    margin: 5px;
+    font-size:18px;
+    color: $default-color;
+  }
+}
+
+

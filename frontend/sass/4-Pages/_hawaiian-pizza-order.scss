@@ -1,0 +1,9 @@
+.hawaiian-container {
+  @extend .product-container;
+}
+.hawaiian-item{
+  @extend .shop-item;
+  background-image: url(../images/pizza/hawaiian.png);
+}
+
+

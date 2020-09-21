@@ -1,0 +1,7 @@
+.pepperoni-container {
+  @extend .product-container;
+}
+.pepperoni-item{
+  @extend .shop-item;
+  background-image: url(../images/pizza/pepperoni.png);
+}

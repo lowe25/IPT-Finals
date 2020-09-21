@@ -1,0 +1,7 @@
+.chicken-fingers-container {
+  @extend .product-container;
+}
+.chicken-fingers-item{
+  @extend .shop-item;
+  background-image: url(../images/chicken-meals/chickenfingers.png);
+}

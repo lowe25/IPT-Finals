@@ -1,0 +1,8 @@
+.bacon-container{
+    @extend .product-container;
+
+}
+.bacon-item{
+    @extend .shop-item;
+    background-image: url(../images/burgers/bacon-burger.png);
+}

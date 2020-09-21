@@ -1,0 +1,32 @@
+.burger-container {
+  height: 43rem;
+  width: 100%;
+}
+
+.burger-products {
+  padding-top: 7%;
+  @extend .grid-desktop;
+}
+
+.burger1,
+.burger2,
+.burger3,
+.burger4 {
+  @extend .box-product;
+  @extend .img-format;
+}
+.burger1 {
+  background-image: url(../images/burgers/bacon-burger.png);
+}
+.burger2 {
+  background-image: url(../images/burgers/burger.png);
+}
+
+.burger3 {
+  background-image: url(../images/burgers/cheese-burger.png);
+}
+.burger4 {
+  background-image: url(../images/burgers/chicken-burger.png);
+}
+
+

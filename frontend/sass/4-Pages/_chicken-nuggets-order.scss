@@ -1,0 +1,7 @@
+.chicken-nuggets-container{
+    @extend .product-container;
+}
+.chicken-nuggets{
+    @extend .product-img-format;
+background-image: url(../images/chicken-meals/chickennuggets.png);
+}

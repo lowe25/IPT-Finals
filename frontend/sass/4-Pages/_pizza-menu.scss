@@ -1,0 +1,28 @@
+.pizza-container {
+  height: 43rem;
+  width: 100%;
+}
+  .pizza-products {
+    padding-top: 7%;
+    @extend .grid-desktop;
+  }
+
+  .pizza1,
+  .pizza2,
+  .pizza3 {
+    @extend .box-product;
+    @extend .img-format;
+  }
+
+  .pizza1 {
+    background-image: url(../images/pizza/newyork.png);
+  }
+  .pizza2 {
+    background-image: url(../images/pizza/hawaiian.png);
+  }
+  .pizza3 {
+    background-image: url(../images/pizza/pepperoni.png);
+  }
+
+
+

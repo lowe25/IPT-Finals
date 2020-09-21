@@ -1,0 +1,12 @@
+.newyork-container {
+  @extend .product-container;
+}
+.newyork-item{
+  @extend .shop-item;
+  background-image: url(../images/pizza/newyork.png);
+}
+
+.v{
+  display: flex;
+  justify-content: center;
+}

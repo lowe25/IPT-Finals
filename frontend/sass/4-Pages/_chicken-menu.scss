@@ -1,0 +1,31 @@
+.chicken-menu-container {
+  height: 43rem;
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 5px;
+}
+    .chicken-products {
+      padding-top: 20px;
+      @extend .grid-desktop;
+    }
+    .chicken1,
+    .chicken2,
+    .chicken3 {
+      @extend .box-product;
+      @extend .img-format;
+    }
+  
+    .chicken1 {
+      background-image: url(../images/chicken-meals/chickenfingers.png);
+    }
+    .chicken2 {
+     background-image: url(../images/chicken-meals/chickennuggets.png);
+    }
+    .chicken3 {
+    background-image: url(../images/chicken-meals/chickenwings.png);
+    }
+  
+
+
+  
+  

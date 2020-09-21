@@ -1,0 +1,7 @@
+.chicken-wings-container{
+    @extend .product-container;
+}
+.chicken-wings-item{
+    @extend .shop-item;
+    background-image: url(../images/chicken-meals/chickenwings.png);
+}

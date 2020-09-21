@@ -1,0 +1,675 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/*
+0-480 = Small Phones = MAX
+481-768 = Tablets/Large Phones = MIN 
+769-1279 = Laptops/Large Tablets = MIN 
+769 - 1024
+1024- 1280
+1280 = Desktop = MIN
+
+EM = px / 16 
+*/
+.img-bg, .burger,
+.pizza,
+.chickens {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-format, .product-img-format, .chicken-nuggets, .beverage-item, .dessert-item, .shop-item, .newyork-item, .hawaiian-item, .pepperoni-item, .burger-item, .bacon-item, .burger-cheese-item, .chicken-fingers-item, .chicken-wings-item, .burger1,
+.burger2,
+.burger3,
+.burger4, .pizza1,
+.pizza2,
+.pizza3, .chicken1,
+.chicken2,
+.chicken3 {
+  height: 16rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box-product, .burger1,
+.burger2,
+.burger3,
+.burger4, .pizza1,
+.pizza2,
+.pizza3, .chicken1,
+.chicken2,
+.chicken3 {
+  height: 230px;
+  width: 440px;
+  border: 2px solid black;
+}
+
+.box-cart, .beverage-item, .dessert-item, .shop-item, .newyork-item, .hawaiian-item, .pepperoni-item, .burger-item, .bacon-item, .burger-cheese-item, .chicken-fingers-item, .chicken-wings-item {
+  height: 250px;
+  width: 260px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.box-menus, .burger,
+.pizza,
+.chickens {
+  height: 170px;
+  width: 500px;
+  border: 2px solid black;
+  color: #ffffff;
+  padding: 1em;
+  font-size: 20px;
+}
+
+.grid-desktop, .products, .burger-products, .pizza-products, .chicken-products {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.grid-desktop-cart {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+  grid-gap: 10px;
+  padding-left: 100px;
+}
+
+.grid-center {
+  display: grid;
+  justify-content: center;
+}
+
+/*MAIN NAV*/
+.navbar {
+  position: relative;
+  background-color: #d42e2e;
+  border-bottom: 2px solid #000000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .navbar-links {
+  display: inline;
+  float: right;
+}
+
+.navbar p {
+  float: left;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 50px;
+  padding-left: 11px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .navbar-links li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+.navbar .navbar-links li a {
+  display: block;
+  font-size: 19px;
+  padding: 15px 14px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar .navbar-links li a:hover {
+  color: #000000;
+}
+
+/*FOR DROP DOWN*/
+.navbar-links li:hover .hover-menu {
+  display: block;
+}
+
+.navbar-links li .hover-menu {
+  display: none;
+  position: absolute;
+  background-color: #d42e2e;
+  margin-top: -2px;
+  padding: 5px;
+  z-index: 1;
+}
+
+.navbar-links li .hover-menu li {
+  width: 130px;
+}
+
+.navbar-links li .hover-menu li a {
+  padding: 5px 14px;
+}
+
+.navbar-links li .hover-menu li a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*Hamburger Menu*/
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 22px;
+}
+
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+}
+
+@media (max-width: 712px) {
+  /*NAVBAR*/
+  .toggle-button {
+    display: flex;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .navbar-links {
+    width: 100%;
+    display: none;
+  }
+  .navbar ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar .navbar-links.active {
+    display: flex;
+  }
+}
+
+footer {
+  position: relative;
+  height: 12.3rem;
+  width: 100%;
+  background-color: #d42e2e;
+  color: white;
+  padding-top: 30px;
+  border-top: 2px solid black;
+  list-style: none;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info div {
+  margin: 10px;
+  line-height: 25px;
+}
+
+.footer-info li {
+  list-style: none;
+  margin: 1px 0;
+}
+
+@media only screen and (max-width: 30em) {
+  footer {
+    height: 35rem;
+  }
+  .footer-info {
+    display: block;
+    text-align: center;
+  }
+}
+
+.product-container, .cart-container, .newyork-container, .hawaiian-container, .pepperoni-container, .burgers-container, .bacon-container, .burger-cheese-container, .chicken-burger-container, .chicken-fingers-container, .chicken-nuggets-container, .chicken-wings-container {
+  height: 22rem;
+  width: 100%;
+  padding-top: 1%;
+}
+
+.product-img-format, .chicken-nuggets {
+  height: 250px;
+  width: 260px;
+  padding: 10px;
+  text-align: center;
+}
+
+#ordered-complete {
+  background-color: red;
+  color: white;
+}
+
+.product-class {
+  display: grid;
+  justify-content: center;
+}
+
+.product-order {
+  display: grid;
+  justify-content: center;
+}
+
+.product-order input, .product-order p {
+  margin-left: 10px;
+}
+
+.shop-item-details {
+  position: relative;
+  top: 70%;
+}
+
+.shop-items {
+  padding-top: 30px;
+  display: grid;
+  justify-content: center;
+}
+
+.cart-container {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.cart-items {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Button*/
+.btn-global {
+  height: 50px;
+  width: 00px;
+  font-size: 18px;
+  background-color: #d42e2e;
+  color: #f4f4f4;
+  border: none;
+}
+
+.btn-remove {
+  height: 20px;
+  width: 100px;
+  background-color: #d42e2e;
+  color: white;
+  border: none;
+}
+
+.btn-order {
+  height: 40px;
+  width: 260px;
+  background-color: #d42e2e;
+  color: white;
+  border: none;
+}
+
+.btn-cart {
+  height: 40px;
+  width: 260px;
+  background-color: #d42e2e;
+  color: white;
+  border: none;
+}
+
+.btn-menu {
+  height: 30px;
+  width: 30%;
+  border: none;
+  color: #ffffff;
+  background-color: #d42e2e;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #b63a3a;
+  transition: 2ms;
+}
+
+#infos {
+  width: 10px;
+}
+
+.btn-order {
+  display: block;
+  height: 30px;
+  width: 120px;
+  background-color: #d42e2e;
+  color: #ffffff;
+  border: none;
+  margin: 10px;
+}
+
+.order {
+  position: relative;
+  top: 50%;
+  left: 60%;
+}
+
+.order .product-name,
+.order .product-price {
+  margin: 5px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.txt-global {
+  height: 40px;
+  width: 500px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.txt-password {
+  height: 40px;
+  width: 500px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.txt-quantity {
+  display: block;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+}
+
+.quantity-amount {
+  display: block;
+  width: 110px;
+  margin: 10px;
+}
+
+textarea {
+  height: 100px;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+/*Contact*/
+.txt-cont {
+  height: 40px;
+  width: 520px;
+}
+
+.index-container {
+  height: 43rem;
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 5px;
+}
+
+.products {
+  padding-top: 20px;
+}
+
+/*FOOD MENU*/
+.pizza {
+  background-image: url(../images/pizza.jpg);
+}
+
+.burger {
+  background-image: url(../images/burger.jpg);
+}
+
+.chickens {
+  background-image: url(../images/pizza.jpg);
+}
+
+@media only screen and (max-width: 30em) {
+  .index-container {
+    padding-top: 20px;
+    height: 40rem;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+    justify-content: center;
+    grid-gap: 10px;
+  }
+  .burger,
+  .pizza,
+  .chickens {
+    height: 170px;
+    width: 300px;
+    border: 2px solid black;
+    color: #ffffff;
+    padding: 1em;
+    font-size: 20px;
+  }
+}
+
+.about-container {
+  height: 60rem;
+  width: 100%;
+}
+
+.about {
+  margin: 20px;
+  padding: 10px;
+  font-size: 19px;
+}
+
+.landing {
+  border-bottom: 2px solid black;
+}
+
+.landing img {
+  height: 500px;
+  width: 100%;
+}
+
+.how {
+  padding-left: 50px;
+}
+
+.works {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.procedure {
+  display: block;
+  font-size: 90px;
+}
+
+.procedure p {
+  font-size: 18px;
+}
+
+.transaction-container {
+  height: 42.9rem;
+  overflow-y: auto;
+  /* Trigger vertical scroll    */
+  overflow-x: hidden;
+  /* Hide the horizontal scroll */
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.sample {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tbl-col, .update-datas {
+  height: 600px;
+  width: 50%;
+}
+
+.tbl-col {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.update-datas {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.joke button {
+  margin: 10px;
+}
+
+#quantity {
+  margin: 10px;
+  width: 200px;
+}
+
+#order-btn {
+  margin: 10px;
+}
+
+.cart-container {
+  overflow-y: auto;
+  /* Trigger vertical scroll    */
+  overflow-x: hidden;
+  /* Hide the horizontal scroll */
+}
+
+.burger-container {
+  height: 43rem;
+  width: 100%;
+}
+
+.burger-products {
+  padding-top: 7%;
+}
+
+.burger1 {
+  background-image: url(../images/burgers/bacon-burger.png);
+}
+
+.burger2 {
+  background-image: url(../images/burgers/burger.png);
+}
+
+.burger3 {
+  background-image: url(../images/burgers/cheese-burger.png);
+}
+
+.burger4 {
+  background-image: url(../images/burgers/chicken-burger.png);
+}
+
+.pizza-container {
+  height: 43rem;
+  width: 100%;
+}
+
+.pizza-products {
+  padding-top: 7%;
+}
+
+.pizza1 {
+  background-image: url(../images/pizza/newyork.png);
+}
+
+.pizza2 {
+  background-image: url(../images/pizza/hawaiian.png);
+}
+
+.pizza3 {
+  background-image: url(../images/pizza/pepperoni.png);
+}
+
+.chicken-menu-container {
+  height: 43rem;
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 5px;
+}
+
+.chicken-products {
+  padding-top: 20px;
+}
+
+.chicken1 {
+  background-image: url(../images/chicken-meals/chickenfingers.png);
+}
+
+.chicken2 {
+  background-image: url(../images/chicken-meals/chickennuggets.png);
+}
+
+.chicken3 {
+  background-image: url(../images/chicken-meals/chickenwings.png);
+}
+
+.newyork-item {
+  background-image: url(../images/pizza/newyork.png);
+}
+
+.v {
+  display: flex;
+  justify-content: center;
+}
+
+.hawaiian-item {
+  background-image: url(../images/pizza/hawaiian.png);
+}
+
+.pepperoni-item {
+  background-image: url(../images/pizza/pepperoni.png);
+}
+
+.burger-item {
+  background-image: url(../images/burgers/burger.png);
+}
+
+.bacon-item {
+  background-image: url(../images/burgers/bacon-burger.png);
+}
+
+.burger-cheese-item {
+  background-image: url(../images/burgers/cheese-burger.png);
+}
+
+.chicken-fingers-item {
+  background-image: url(../images/chicken-meals/chickenfingers.png);
+}
+
+.chicken-nuggets {
+  background-image: url(../images/chicken-meals/chickennuggets.png);
+}
+
+.chicken-wings-item {
+  background-image: url(../images/chicken-meals/chickenwings.png);
+}
+/*# sourceMappingURL=style.css.map */

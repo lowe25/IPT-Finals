@@ -1,0 +1,7 @@
+.burgers-container{
+@extend .product-container;
+}
+.burger-item{
+    @extend .shop-item;
+    background-image: url(../images/burgers/burger.png);
+}

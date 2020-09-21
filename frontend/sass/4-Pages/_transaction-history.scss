@@ -1,0 +1,57 @@
+.transaction-container{
+    height: 42.9rem;
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .btn{
+    
+  }
+  .sample{
+    margin:10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .tbl-col,.update-datas{
+    height: 600px;
+    width: 50%;
+  }
+  .tbl-col{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .update-datas{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .joke{
+    button{
+      margin: 10px;
+    }
+  }
+  #quantity{
+  margin: 10px;
+    width: 200px;
+  }
+  #order-btn{
+    margin: 10px;
+  }

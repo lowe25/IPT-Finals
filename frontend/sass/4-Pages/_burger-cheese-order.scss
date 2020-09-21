@@ -1,0 +1,7 @@
+.burger-cheese-container {
+  @extend .product-container;
+}
+.burger-cheese-item{
+  @extend .shop-item;
+  background-image: url(../images/burgers/cheese-burger.png);
+}

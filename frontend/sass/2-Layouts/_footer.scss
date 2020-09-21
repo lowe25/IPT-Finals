@@ -1,0 +1,34 @@
+footer{
+    position: relative;
+    height: 12.3rem;
+    width: 100%;
+    background-color: $bg-color;
+    color: white;
+    padding-top: 30px;
+    border-top: 2px solid black;
+    list-style: none;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: center;
+    div{
+        margin: 10px;
+        line-height: 25px;
+    }
+}
+.footer-info li {
+list-style: none;
+margin: 1px 0;
+}
+
+@include respond($sm-screen){
+    footer {
+        height: 35rem;
+      }
+      .footer-info {
+        display: block;
+        text-align: center;
+      } 
+}
+
